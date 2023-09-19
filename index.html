@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RGB Colour Guessing Game</title> <!--page title-->
+</head>
+<body>
+    <header>
+        <h1>RGB Colour Guessing Game</h1> <!--main heading-->
+    </header>
+    <main>
+        <section>
+            <h2 id="RGB-color"></h2><!--displays random rgb color text-->
+            <h3 id="livesRemaining"></h3> <!--lives are updaded here-->
+        </section>
+        <section>
+            <section class="btn-controls" >
+                <button id="start" onclick="start()">Start</button> <!--button to call start function-->
+                <button onclick="restart()">Reset</button> <!--button to call restart function to reset game-->
+            </section>
+            <section class="container"> <!--divs for 3 boxes-->
+                <div id='option-1'></div> <br>
+                <div id='option-2'></div> <br>
+                <div id='option-3'></div> <br>
+            </section>
+            <!--result and score headings-->
+            <h4 id="result"></h4>
+            <h4 id="score"></h4>
+            <!--section for user to replay-->
+            <section class="replay"> 
+                <p id="replay"></p>
+                <button id="playAgain" style="display:none;" onclick="replayButton()">Play Again?</button>
+        </section>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
